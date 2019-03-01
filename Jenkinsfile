@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'django-ex' } }
+    agent any
     stages {
         stage('build') {
             steps {
-                echo 'python --version'
+                bat 'set'
             }
         }
     }
